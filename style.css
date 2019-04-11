@@ -1,0 +1,225 @@
+/* global variable*/
+:root {
+  --dark: #17252A;
+  --white: #FEFFFF;
+  --emerald: #3AAFA9;
+  --grey: #DEF2F1;
+  --darkgreen: #2B7A78;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+body {
+  font-size: 15px;
+  font-family: Helvitica, Arial, sans-serif;
+  margin:0;
+  padding:0;
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.img {
+  max-width: 100%;
+}
+
+
+
+
+/*HEADER*/
+header {
+  position: fixed;
+  top: 0;
+  min-height: 70px;
+  width: 100%;
+  background-color: var(--emerald);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--white);
+  margin: auto;
+}
+
+nav ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  list-style: none;
+  grid-template-columns: repeat(5, 150px);
+  justify-content: center;
+}
+
+nav li {
+ display: inline-block;
+ float: left;
+ text-transform: uppercase;
+ text-align: center;
+ padding: 0;
+}
+
+nav a {
+  padding: 0;
+  display: block;
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: var(--darkgreen);
+}
+
+
+
+/*Contents*/
+.aboutContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 250px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.aboutContainer h1, .projectContainer h2, .writingContainer h2, .speakingContainer h2, contactContainer h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.aboutContainer p, .projectContainer p, .writingContainer p, .speakingContainer p, contactContainer p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+
+/*Projects*/
+.projectContainer {
+  margin-top:  100px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background-color: var(--grey);
+  color: var(--darkgreen);
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 70px;
+}
+
+.box h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.box p {
+  text-align: justify;
+}
+
+.box img {
+  border-radius: 5%;
+}
+
+
+/*writing container*/
+.writingContainer {
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 100px;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.writingContainer .boxes {
+  margin-top: 50px;
+}
+.writingContainer ul {
+  list-style: none;
+}
+
+.writingContainer li {
+  line-height: 2rem;
+}
+
+.writingContainer .fas {
+  margin-left: 9px;
+}
+
+/*Speaking container*/
+.speakingContainer {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 100px;
+  background-color: var(--grey);
+  color: var(--dark);
+}
+
+
+/*Contact*/
+.contactContainer {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  margin-top: 70px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 100px;
+  background-color: var(--white);
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+}
+
+.contactContainer h2, .contactContainer p {
+  text-align: center;
+}
+
+.contactContainer p {
+  margin-top: 50px;
+  font-style: italic;
+}
+
+.contactContainer #email {
+  margin-top: 60px;
+  text-decoration: underline;
+}
+
+/*Footer*/
+footer {
+  min-height: 40px;
+  width: 100%;
+  background-color: var(--emerald);
+  padding-top: 15px;
+  color: var(--white);
+  text-align: center;
+}
