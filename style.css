@@ -107,12 +107,17 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
-.aboutContainer p, .projectContainer p, .writingContainer p, .speakingContainer p, contactContainer p {
-  text-align: center;
+
+
+.aboutContainer .textbox p {
+  text-align: justify;
   font-size: 1.2rem;
 }
 
-
+.aboutContainer .emphasize {
+  color: var(--emerald);
+  font-weight: bold;
+}
 
 /*Projects*/
 .projectContainer {
@@ -128,7 +133,7 @@ nav a:hover {
 .boxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 50px;
+  grid-gap: 70px;
   margin-left: 90px;
   margin-right: 90px;
   margin-top: 70px;
@@ -205,6 +210,8 @@ nav a:hover {
 }
 
 .contactContainer p {
+  text-align: justify;
+  font-size: 1.2rem;
   margin-top: 50px;
   font-style: italic;
 }
