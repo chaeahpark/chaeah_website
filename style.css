@@ -114,6 +114,11 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+.aboutContainer .special {
+  color: #E85064;
+  font-weight: bold;
+}
+
 .aboutContainer .emphasize {
   color: var(--emerald);
   font-weight: bold;
@@ -132,11 +137,77 @@ nav a:hover {
 
 .boxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-areas:
+  'box-a'
+  'box-b'
+  'box-c'
+  'box-d'
+  'box-e'
+  'box-f';
   grid-gap: 70px;
   margin-left: 90px;
   margin-right: 90px;
   margin-top: 70px;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 25% 75%);
+  grid-gap: 35px;
+  background-color: var(--white);
+}
+
+.box-a {
+  grid-area: 'box-a';
+}
+
+.box-b {
+  grid-area: 'box-b';
+}
+
+.box-c {
+  grid-area: 'box-c';
+}
+
+.box-d {
+  grid-area: 'box-d';
+}
+
+.box-e {
+  grid-area: 'box-e';
+}
+
+.box-f {
+  grid-area: 'box-f';
+}
+
+.box .picture {
+  background-size: cover;
+  background-position: center;
+}
+
+.box-a .picture {
+  background-image: url("./img/rajakyla.jpg");
+}
+
+.box-b .picture {
+  background-image: url("./img/1euroScience.jpg");
+}
+
+.box-c .picture {
+  background-image: url("./img/daughtersProgramming.jpg");
+}
+
+.box-d .picture {
+  background-image: url("./img/hackedHimmeli.jpg");
+}
+
+.box-e .picture {
+  background-image: url("./img/techCraft.jpg");
+}
+
+.box-f .picture {
+  background-image: url("./img/makerMindset.jpg");
 }
 
 .box h3 {
@@ -149,7 +220,8 @@ nav a:hover {
 }
 
 .box img {
-  border-radius: 5%;
+  border-radius: 3%;
+  align-self: center;
 }
 
 
@@ -189,6 +261,12 @@ nav a:hover {
   background-color: var(--grey);
   color: var(--dark);
 }
+
+.speakingContainer p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 
 
 /*Contact*/
