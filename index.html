@@ -10,19 +10,25 @@
 </head>
 
 <body>
+  <div class="wrapper">
+    <div class="topContainer">
+      <header>
+        <h1>Chaeah Park</h1>
+      </header>
 
-  <header>
-    <h1>Chaeah Park</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#writing">Writings</a></li>
-        <li><a href="#speaking">Speakings</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!--NAV BAR-->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#writing">Writings</a></li>
+          <li><a href="#speaking">Speakings</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
 
   <section class="aboutContainer" id="about">
     <img src="./img/work.jpg" alt="where I work" />
@@ -124,6 +130,7 @@
     </div>
   </section>
 
+</div>
   <section class=writingContainer id="writing">
     <h2>Writings</h2>
     <p>I write about technology in learning environments, educational psychology, and my experience in Nordic Europe's education. </p>
@@ -158,26 +165,27 @@
     </div>
   </section>
 
-  <section class=speakingContainer id="speaking">
+<div class="speakingWrapper">
+  <section class="speakingContainer" id="speaking">
     <h2>Speakings</h2>
     <p>There is high demand in new educational approach in Korea but scarce supply from foreign companies.
       <br>I share my expertise in Korean education industry with startups in overseas.</p>
-    <div class="boxes-speaking">
-      <div class="boxA">
+    <div class="boxes">
+      <div class="box" id="boxA">
         <div class="picture">
         </div>
         <div class="textbox">
           <p>Maker Education and EduTech industry<br>in South Korea<br>@Technomania, Denmark</p>
         </div>
       </div>
-      <div class="boxB">
+      <div class="box" id="boxB">
         <div class="picture">
         </div>
         <div class="textbox">
           <p>Maker Education in South Korea<br>@Society 4.0, Denmark</p>
         </div>
       </div>
-      <div class="boxC">
+      <div class="box" id="boxC">
         <div class="picture">
         </div>
         <div class="textbox">
@@ -186,6 +194,7 @@
       </div>
     </div>
   </section>
+</div>
 
   <section class=contactContainer id="contact">
     <div>
@@ -198,6 +207,6 @@
   <footer>
   Copyright &copy; 2019. Handcrafted by Chaeah Park.
   </footer>
-
+</div>
 </body>
 </html>
