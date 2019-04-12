@@ -116,6 +116,11 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
+.writingContainer p, .speakingContainer p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--dark)
+}
 
 .aboutContainer .textbox p {
   text-align: justify;
@@ -234,11 +239,15 @@ nav a:hover {
   color: var(--dark);
 }
 
+
 .writingContainer .boxes {
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .writingContainer ul {
-  list-style: none;
+  list-style: circle;
 }
 
 .writingContainer li {
@@ -269,13 +278,54 @@ nav a:hover {
 
 .boxes-speaking {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 35px;
+  grid-template-areas:
+  'boxA boxB boxC';
+  grid-gap: 40px;
   margin-top: 70px;
   margin-left: 90px;
   margin-right: 90px;
+  min-height: 400px;
 }
 
+.boxes-speaking .picture {
+  background-size: cover;
+  background-position: center;
+}
+
+.boxA, .boxB, .boxC {
+  display: grid;
+  grid-template-rows: 75% 25%;
+  grid-gap: 10px;
+}
+
+.boxA p, .boxB p, .boxC p {
+ font-size: 1rem; 
+}
+
+.boxA {
+  grid-area: boxA;
+}
+
+.boxB {
+  grid-area: boxB;
+}
+
+.boxC {
+  grid-area: boxC;
+}
+
+.boxA .picture {
+  background-image: url("./img/technomania.jpg");
+  bac
+}
+
+.boxB .picture {
+  background-image: url("./img/society4.jpg");
+}
+
+.boxC .picture {
+  background-image: url("./img/underbroen.jpg");
+}
 
 /*Contact*/
 .contactContainer {
