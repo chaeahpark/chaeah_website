@@ -30,11 +30,20 @@ img {
   overflow: hidden;
 }
 
-.img {
-  max-width: 100%;
+.box h3 {
+  text-align: center;
+  font-size: 1.3rem;
 }
 
+.box p {
+  text-align: justify;
+}
 
+.box img {
+  border-radius: 3%;
+  min-height: 250px;
+  align-self: center;
+}
 
 
 /*HEADER*/
@@ -108,7 +117,6 @@ nav a:hover {
 }
 
 
-
 .aboutContainer .textbox p {
   text-align: justify;
   font-size: 1.2rem;
@@ -135,7 +143,7 @@ nav a:hover {
   color: var(--darkgreen);
 }
 
-.boxes {
+.projectContainer .boxes {
   display: grid;
   grid-template-areas:
   'box-a'
@@ -150,11 +158,14 @@ nav a:hover {
   margin-top: 70px;
 }
 
-.box {
+.projectContainer .box {
   display: grid;
   grid-template-columns: repeat(2, 25% 75%);
   grid-gap: 35px;
-  background-color: var(--white);
+}
+
+.projectContainer .box h3 {
+  margin-top: 0;
 }
 
 .box-a {
@@ -210,19 +221,7 @@ nav a:hover {
   background-image: url("./img/makerMindset.jpg");
 }
 
-.box h3 {
-  text-align: center;
-  font-size: 1.3rem;
-}
 
-.box p {
-  text-align: justify;
-}
-
-.box img {
-  border-radius: 3%;
-  align-self: center;
-}
 
 
 /*writing container*/
@@ -251,6 +250,7 @@ nav a:hover {
 }
 
 /*Speaking container*/
+
 .speakingContainer {
   padding-top: 30px;
   padding-bottom: 70px;
@@ -267,6 +267,14 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+.boxes-speaking {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin-top: 70px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
 
 
 /*Contact*/
@@ -288,7 +296,7 @@ nav a:hover {
 }
 
 .contactContainer p {
-  text-align: justify;
+  text-align: center;
   font-size: 1.2rem;
   margin-top: 50px;
   font-style: italic;
