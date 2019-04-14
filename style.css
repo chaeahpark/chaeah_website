@@ -382,6 +382,8 @@ nav ul {
   grid-template-areas:
   'textbox'
   'image';
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .aboutContainer img {
@@ -399,6 +401,8 @@ nav ul {
   display: grid;
   grid-template-columns: auto;
   grid-gap: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .projectContainer .box {
